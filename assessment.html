@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-      <header>
-      <nav class="navbar bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">あなたのいいところ診断</a>
-        </div>
-      </nav>
-    </header>
   <meta charset="UTF-8">
   <meta name="twitter:card" content="summary">
 <meta property="og:url" content="https://あなたのユーザ名.github.io/assessment/assessment.html">
@@ -18,10 +11,25 @@
   <title>あなたのユーザー名のいいところ診断</title>
 </head>
 <body　class="be-primary-subtle">
+       <header>
+      <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">あなたのいいところ診断</a>
+        </div>
+      </nav>
+    </header>
+      <div class="container pt-5">
   <h1>あなたのいいところは?</h1>
   <p>診断したい名前を入れて下さい</p>
+            <div class="row">
+        <div class="col-sm-9 col-lg-6">
+          <div class="input-group mb-3">
   <input type="text" id="user-name" size="40" maxlength="20">
   <button id="assessment">診断する</button>
+                </div>
+        </div>
+      </div>
+
   <div id="result-area"></div>
   <div id="tweet-area"></div>
   <script src="assessment.js"></script>
